@@ -18,6 +18,8 @@ public class Screen {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
     private int screen_number;
 
     private int number_of_seats;

@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Setter
 @Getter
 @AllArgsConstructor
@@ -20,4 +22,6 @@ public class TheatreDto {
     private String state;
 
     private int pin_code;
+
+    private List<ScreenDto> screenDtos;
 }

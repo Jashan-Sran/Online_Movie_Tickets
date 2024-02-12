@@ -31,7 +31,8 @@ public class MovieShow {
 
     private int screen_number;
 
-        @OneToOne(cascade = CascadeType.ALL)
+        @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
+        @JoinColumn(name = "fk_theatre_Id",referencedColumnName = "theatre_Id")
         private Theatre theatre;
 
 

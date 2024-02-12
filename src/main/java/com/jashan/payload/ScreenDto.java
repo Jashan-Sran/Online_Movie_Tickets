@@ -11,6 +11,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class ScreenDto {
 
+    private int id;
+
     private int screen_number;
 
     private int number_of_seats;
